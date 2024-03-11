@@ -8,7 +8,11 @@ def main():
     # Get a list of all unallocated IP addresses in each region
     for region in regions:
         for id in get_unallocated_ids(region):
-            pprint(remove_unassigned_ips(region, id))
+            result = input(f"Do you want to remove {id} from region {region}? (y/n) ")
+            if result.lower() == "y" or result.lower() == "yes":
+                pprint(remove_unassigned_ips(region, id))
+            else:
+                continue
 
 # Function that gets all regions
 def get_all_regions():
