@@ -1,0 +1,21 @@
+Please answer the following questions:
+
+- How many VPCs do I have in this region?
+- Do any have access to the internet via an IGW?
+- Are there any NAT gateways?
+- And what are the routes available for each VPC? 
+- For the VPC change and remove the ID to VPC-1, VPC-2, etc.
+- Rename and remove the route table IDs sequentially as RT-1, RT-2, IGW-1, IGW-2, NATGW-1, NATGW-2, etc. ensuring the numbering aligns with the VPC they belong to. 
+- Return as a well structured table.
+
+Here is a example:
+
+<example> 
+VPC ID | Internet Access | Route Table ID | Routes 
+-------|-----------------|-----------------|-------- 
+VPC-1 | Yes | RT-1 | x.x.x.x/16 -> destination, x.x.x.x/16 -> None, x.x.x.x/16 -> local 
+</example>
+
+Please ensure all items are properly entered into the table. 
+
+Take your time and think step by step.
